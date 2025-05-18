@@ -1,0 +1,70 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Mercedes-Benz</title>
+</head>
+<body>
+    <header>
+<div class="header-top">
+<div class="contact-info">
+    <div class="left-info">
+    <div class="tel">
+        <img src="images/телефон.png" alt="Телефон">
+        <p>79186765508</p>
+    </div>
+    <div class="pochta">
+        <img src="images/письмо.png" alt="Почта">
+        <p>shanny90@gmail.com</p>
+    </div>
+    </div>
+    <div class="mesto">
+    <img src="images/метка.png" alt="Местоположение">
+    <p>г. Краснодар ул. Фадеева 429/3</p>
+        <img src="images/layk.png" alt="Избранное">
+    </div>
+</div>
+</div>
+<div class="divider"></div>
+<div class="header-bottom">
+<nav class="menu">
+      <ul>
+        <li><a href="#">О КОМПАНИИ</a></li>
+        <li><a href="#">УСЛУГИ</a></li>
+        <li><a href="#">В НАЛИЧИИ</a></li>
+        <li><a href="#">МОДЕЛЬНЫЙ РЯД</a></li>
+        <li><a href="#">АКЦИИ</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="https://www.mercedes-benz.com/content/dam/brandhub/assets/vehicles/cla/pad/video/01-cla-pad-stage-video-16-9.cbv20250313093227.mp4/_jcr_content/renditions/original" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="content">
+    <p class="contentp">Mercedes-Benz</p>
+    <p>СКАЖИ "ДА" СВОИМ МЕЧТАМ</p>
+</div>
+
+</body>
+</html>
+    <script>
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.menu');
+
+    burger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    });
+    </script>
