@@ -9,42 +9,48 @@
     <title>Mercedes-Benz</title>
 </head>
 <body>
-    <header>
-<div class="header-top">
-<div class="contact-info">
-    <div class="left-info">
-    <div class="tel">
-        <img src="images/телефон.png" alt="Телефон">
-        <p>79186765508</p>
+<header>
+  <div class="header-top">
+    <div class="contact-info">
+      <div class="left-info">
+        <div class="tel">
+          <img src="images/телефон.png" alt="Телефон">
+          <p>79186765508</p>
+        </div>
+        <div class="pochta">
+          <img src="images/письмо.png" alt="Почта">
+          <p>shanny90@gmail.com</p>
+        </div>
+      </div>
+      <div class="mesto">
+        <img src="images/метка.png" alt="Местоположение">
+        <p>г. Краснодар ул. Фадеева 429/3</p>
+        <img src="images/layk.png" alt="Избранное" class="favorite-icon">
+      </div>
     </div>
-    <div class="pochta">
-        <img src="images/письмо.png" alt="Почта">
-        <p>shanny90@gmail.com</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="header-bottom">
+    <div class="favorite">
+      <img src="images/layk.png" alt="Избранное">
     </div>
-    </div>
-    <div class="mesto">
-    <img src="images/метка.png" alt="Местоположение">
-    <p>г. Краснодар ул. Фадеева 429/3</p>
-        <img src="images/layk.png" alt="Избранное">
-    </div>
-</div>
-</div>
-<div class="divider"></div>
-<div class="header-bottom">
-<nav class="menu">
-      <ul>
-        <li><a href="#">О КОМПАНИИ</a></li>
-        <li><a href="#">УСЛУГИ</a></li>
-        <li><a href="#">В НАЛИЧИИ</a></li>
-        <li><a href="#">МОДЕЛЬНЫЙ РЯД</a></li>
-        <li><a href="#">АКЦИИ</a></li>
-        <li><a href="#">КОНТАКТЫ</a></li>
-      </ul>
-    </nav>
     <div class="burger">
       <span></span><span></span><span></span>
     </div>
   </div>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="#">О КОМПАНИИ</a></li>
+      <li><a href="#">УСЛУГИ</a></li>
+      <li><a href="#">В НАЛИЧИИ</a></li>
+      <li><a href="#">МОДЕЛЬНЫЙ РЯД</a></li>
+      <li><a href="#">АКЦИИ</a></li>
+      <li><a href="#">КОНТАКТЫ</a></li>
+    </ul>
+  </nav>
 </header>
 
 <div class="video-background">
@@ -60,11 +66,13 @@
 
 </body>
 </html>
-    <script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     const burger = document.querySelector('.burger');
     const menu = document.querySelector('.menu');
 
     burger.addEventListener('click', () => {
-    menu.classList.toggle('active');
+      menu.classList.toggle('active');
     });
-    </script>
+  });
+</script>
