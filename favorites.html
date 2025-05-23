@@ -1,0 +1,220 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="favorites.css">
+    <title>Mercedes-Benz</title>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="contact-info">
+        <div class="left-info">
+          <div class="tel">
+            <img src="images/телефон.png" alt="Телефон">
+            <p>79186765508</p>
+          </div>
+          <div class="pochta">
+            <img src="images/письмо.png" alt="Почта">
+            <p>shanny90@gmail.com</p>
+          </div>
+        </div>
+        <div class="mesto">
+          <img src="images/метка.png" alt="Местоположение">
+          <p>г. Краснодар ул. Фадеева 429/3</p>
+          <div class="favorite">
+            <img src="images/layk.png" alt="Избранное">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="divider"></div>
+  
+    <div class="header-bottom">
+      <div class="favorite">
+        <img src="images/layk.png" alt="Избранное">
+      </div>
+      <div class="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">О КОМПАНИИ</a></li>
+        <li><a href="#">УСЛУГИ</a></li>
+        <li><a href="#">В НАЛИЧИИ</a></li>
+        <li><a href="#">МОДЕЛЬНЫЙ РЯД</a></li>
+        <li><a href="#">АКЦИИ</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="hero-section">
+  <div class="video-background">
+    <img src="images/favorites.png" alt="Избранное">
+  </div>
+  
+
+  <div class="content">
+    <p class="contentp">Mercedes-Benz</p>
+    <p>ВАМ ПОНРАВИЛИСЬ ДАННЫЕ МОДЕЛИ</p>
+  </div>
+</section>
+
+
+
+<section class="info-section">
+  <p class="description">
+    <strong>Mercedes-Benz —</strong> один из самых узнаваемых автомобильных брендов в мире. Модели бренда отличаются легендарным качеством, особой дизайн-эстетикой и инновационным оснащением.
+  </p>
+<h2 class="filter-title">ФИЛЬТРАЦИЯ</h2>
+<div class="filters collapsed">
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Модель</span>
+    <span class="arrow"><img src="images/стрелка.png"></span>
+    <ul class="filter-options">
+      <li>Седан</li>
+      <li>Кроссовер</li>
+      <li>Купе</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Тип кузова</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>Седан</li>
+      <li>Хэтчбек</li>
+      <li>Универсал</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>КПП</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>Механика</li>
+      <li>Автомат</li>
+      <li>Робот</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Тип двигателя</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>Бензин</li>
+      <li>Дизель</li>
+      <li>Гибрид</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Привод</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>Передний</li>
+      <li>Задний</li>
+      <li>Полный</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Год</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>2022</li>
+      <li>2023</li>
+      <li>2024</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Расход</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>до 7 л</li>
+      <li>7-10 л</li>
+      <li>более 10 л</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Клиренс от, мм</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>120</li>
+      <li>150</li>
+      <li>180</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Багажник от, л</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>300</li>
+      <li>400</li>
+      <li>500+</li>
+    </ul>
+  </div>
+   <button class="toggle-button" onclick="toggleFilters()">Показать ещё</button>
+</div>
+  <h2 class="price-title">ЦЕНА</h2>
+<div class="price-slider">
+  <div class="range-track">
+    <input type="range" min="221888" max="2130888" value="221888" step="1000" class="range range-min">
+    <input type="range" min="221888" max="2130888" value="2130888" step="1000" class="range range-max">
+  </div>
+  <div class="price-labels">
+    <span class="min-price">₽ 221,888.00</span>
+    <span class="max-price">₽ 2,130,888.00</span>
+  </div>
+</div>
+</section>
+<div id="favorites-container" class="products-container"></div>
+
+
+<script src="favorites.js"></script>
+<script>
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.menu');
+
+  burger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+
+ function toggleFilter(element) {
+    const isOpen = element.classList.contains('open');
+    document.querySelectorAll('.filter').forEach(el => el.classList.remove('open'));
+    if (!isOpen) {
+      element.classList.add('open');
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.filter-options li').forEach(item => {
+      item.addEventListener('click', function(e) {
+        const filter = this.closest('.filter');
+        const label = filter.querySelector('span');
+        label.textContent = this.textContent;
+        filter.classList.remove('open');
+        e.stopPropagation();
+      });
+    });
+
+    const filters = document.querySelector('.filters');
+    const button = document.querySelector('.toggle-button');
+
+    button.addEventListener('click', () => {
+      filters.classList.toggle('collapsed');
+      button.textContent = filters.classList.contains('collapsed') ? 'Показать ещё' : 'Скрыть';
+    });
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('.filter')) {
+      document.querySelectorAll('.filter').forEach(el => el.classList.remove('open'));
+    }
+  });
+</script>
+</body>
+</html>

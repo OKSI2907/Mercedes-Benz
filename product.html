@@ -1,0 +1,139 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="product.css">
+    <title>G-Class</title>
+</head>
+<body>
+  <div class="blok">
+
+  
+  <div class="close-btn" onclick="closeMenu()">
+            <img src="images/закрыть.png" alt="Закрыть">
+        </div>
+  <p class="product-title">G-Class</p>
+  <p class="price">₽ 1,948,888.00</p>
+  <div class="color-options">
+    <div class="color-circle" style="background: #1381A7" data-img="images/black.png"></div>
+    <div class="color-circle" style="background: #767676" data-img="images/white.png"></div>
+    <div class="color-circle" style="background: #287332" data-img="images/red.png"></div>
+    <div class="color-circle" style="background: #362D2C" data-img="images/blue.png"></div>
+    <div class="color-circle" style="background: #7D848E" data-img="images/gray.png"></div>
+  </div>
+  <div class="product-section">
+    <div class="thumbnails">
+      <img class="thumbnail" src="images/black1.png" data-img="images/black1.png" alt="Black">
+      <img class="thumbnail" src="images/black2.png" data-img="images/black2.png" alt="White">
+      <img class="thumbnail" src="images/black3.png" data-img="images/black3.png" alt="Red">
+      <img class="thumbnail" src="images/black4.png" data-img="images/black4.png" alt="Blue">
+      <img class="thumbnail" src="images/black5.png" data-img="images/black5.png" alt="Gray">
+    </div>
+    <img id="product-img" class="product-image" src="images/black.png" alt="G-Class">
+  </div>
+  <div class="product-description">
+  <p>Интерьер абсолютно нового Mercedes-AMG G 63 разработан таким образом, чтобы обеспечить максимальный комфорт водителя и пассажиров. К числу примечательных деталей относится легендарная пассажирская рукоятка, подчеркивающая внедорожные корни модели.</p>
+  <p>Дополнительными преимуществами являются премиальные кожаные кресла с изысканной ромбовидной прострочкой, а также инновационные отделочные материалы — углепластик и микрофибра MICROCUT, доступные в определенных комплектациях автомобиля.</p>
+</div>
+<section class="car-technical-block">
+  <div class="car-technical-wrapper">
+    <div class="car-image">
+      <img src="images/car-side.png" alt="Автомобиль">
+    </div>
+    <div class="car-specs">
+      <div class="spec-column">
+        <p class="label">КОЛЕСНАЯ БАЗА<br><span>285 см</span></p>
+        <p class="label">СНАРЯЖЕННАЯ МАССА<br><span>2,500 кг</span></p>
+        <p class="label">УГОЛ ВЪЕЗДА<br><span>30 градусов</span></p>
+        <p class="label">ТИП ДВИГАТЕЛЯ<br><span>4.0-литровый V8 с двойным турбонаддувом</span></p>
+      </div>
+      <div class="spec-column">
+        <p class="label">МОЩНОСТЬ<br><span>около 585 л.с. (430 кВт)</span></p>
+        <p class="label">КРУТЯЩИЙ МОМЕНТ<br><span>850 Нм</span></p>
+        <p class="label">МАКСИМАЛЬНАЯ СКОРОСТЬ<br><span>220 км/ч (до 240 км/ч с пакетом AMG Driver)</span></p>
+        <p class="label">РАЗГОН 0–100 КМ/Ч<br><span>4.5 секунды</span></p>
+      </div>
+      <div class="spec-column">
+        <p class="label">ПРИВОД<br><span>Полный привод 4MATIC</span></p>
+        <p class="label">КОРОБКА ПЕРЕДАЧ<br><span>9-ступенчатая автоматическая</span></p>
+        <p class="label">ЗАДНЯЯ ПОДВЕСКА<br><span>Многорычажная</span></p>
+        <p class="label">ПЕРЕДНЯЯ ПОДВЕСКА<br><span>Независимая пружинная</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <div class="category">
+    <h2 class="price-title">ОТЗЫВЫ НА МОДЕЛЬ</h2>
+    <div class="slider">
+        <div class="slider-content"> 
+            <div class="slider-wrapper">
+                <div class="slider-container" id="manicure">
+                    <img src="images/отзыв1.png"></a>
+                    <img src="images/отзыв2.png"></a>
+                    <img src="images/отзыв3.png"></a>
+                    <img src="images/отзыв1.png"></a>
+                    <img src="images/отзыв2.png"></a>
+                    <img src="images/отзыв3.png"></a>
+                    <img src="images/отзыв1.png"></a>
+                    <img src="images/отзыв2.png"></a>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev"><img src="images/СТРЕЛКАлб.png"></button>
+                <button class="next"><img src="images/СТРЕЛКАпб.png"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="add-to-favorites" onclick="addToFavorites()">ДОБАВИТЬ В ИЗБРАННОЕ</button>
+</div>
+  <script>
+     const productImg = document.getElementById('product-img');
+
+    // Цветные круги
+    document.querySelectorAll('.color-circle').forEach(circle => {
+      circle.addEventListener('click', () => {
+        const imgPath = circle.getAttribute('data-img');
+        productImg.src = imgPath;
+      });
+    });
+
+    // Миниатюры
+    document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        const imgPath = thumbnail.getAttribute('data-img');
+        productImg.src = imgPath;
+      });
+    });
+
+    function closeMenu() {
+            window.location.href = "index.html"; 
+        }
+
+        
+  document.addEventListener("DOMContentLoaded", function () {
+    function initSlider(categoryId) {
+        const container = document.getElementById(categoryId);
+        const images = container.querySelectorAll("img");
+        let index = 0;
+        const total = images.length;
+
+        function showImage(step) {
+            index = (index + step + total) % total;
+            container.style.transform = `translateX(-${index * 300}px)`;
+        }
+
+        container.parentElement.parentElement.querySelector(".prev").addEventListener("click", () => showImage(-1));
+        container.parentElement.parentElement.querySelector(".next").addEventListener("click", () => showImage(1));
+    }
+
+    initSlider("manicure"); 
+});
+  </script>
+</body>
+</html>
+

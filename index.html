@@ -9,51 +9,55 @@
     <title>Mercedes-Benz</title>
 </head>
 <body>
-<header>
-  <div class="header-top">
-    <div class="contact-info">
-      <div class="left-info">
-        <div class="tel">
-          <img src="images/телефон.png" alt="Телефон">
-          <p>79186765508</p>
+  <header>
+    <div class="header-top">
+      <div class="contact-info">
+        <div class="left-info">
+          <div class="tel">
+            <img src="images/телефон.png" alt="Телефон">
+            <p>79186765508</p>
+          </div>
+          <div class="pochta">
+            <img src="images/письмо.png" alt="Почта">
+            <p>shanny90@gmail.com</p>
+          </div>
         </div>
-        <div class="pochta">
-          <img src="images/письмо.png" alt="Почта">
-          <p>shanny90@gmail.com</p>
+        <div class="mesto">
+          <img src="images/метка.png" alt="Местоположение">
+          <p>г. Краснодар ул. Фадеева 429/3</p>
+          <div class="favorite">
+            <a href="favorites.html"><img src="images/layk.png" alt="Избранное"></a>
+            
+          </div>
         </div>
       </div>
-      <div class="mesto">
-        <img src="images/метка.png" alt="Местоположение">
-        <p>г. Краснодар ул. Фадеева 429/3</p>
-        <img src="images/layk.png" alt="Избранное" class="favorite-icon">
+    </div>
+  
+    <div class="divider"></div>
+  
+    <div class="header-bottom">
+      <div class="favorite">
+        <a href="favorites.html"><img src="images/layk.png" alt="Избранное"></a>
+      </div>
+      <div class="burger">
+        <span></span><span></span><span></span>
       </div>
     </div>
-  </div>
+  
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">О КОМПАНИИ</a></li>
+        <li><a href="#">УСЛУГИ</a></li>
+        <li><a href="#">В НАЛИЧИИ</a></li>
+        <li><a href="#">МОДЕЛЬНЫЙ РЯД</a></li>
+        <li><a href="#">АКЦИИ</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="divider"></div>
-
-  <div class="header-bottom">
-    <div class="favorite">
-      <img src="images/layk.png" alt="Избранное">
-    </div>
-    <div class="burger">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-
-  <nav class="menu">
-    <ul>
-      <li><a href="#">О КОМПАНИИ</a></li>
-      <li><a href="#">УСЛУГИ</a></li>
-      <li><a href="#">В НАЛИЧИИ</a></li>
-      <li><a href="#">МОДЕЛЬНЫЙ РЯД</a></li>
-      <li><a href="#">АКЦИИ</a></li>
-      <li><a href="#">КОНТАКТЫ</a></li>
-    </ul>
-  </nav>
-</header>
-
-<div class="video-background">
+<section class="hero-section">
+  <div class="video-background">
     <video autoplay muted loop playsinline>
       <source src="https://www.mercedes-benz.com/content/dam/brandhub/assets/vehicles/cla/pad/video/01-cla-pad-stage-video-16-9.cbv20250313093227.mp4/_jcr_content/renditions/original" type="video/mp4">
     </video>
@@ -62,17 +66,512 @@
   <div class="content">
     <p class="contentp">Mercedes-Benz</p>
     <p>СКАЖИ "ДА" СВОИМ МЕЧТАМ</p>
+  </div>
+</section>
+
+
+<div class="blok">
+<section class="info-section">
+  <p class="description">
+    <strong>Mercedes-Benz —</strong> один из самых узнаваемых автомобильных брендов в мире. Модели бренда отличаются легендарным качеством, особой дизайн-эстетикой и инновационным оснащением.
+  </p>
+<h2 class="price-title">ФИЛЬТРАЦИЯ</h2>
+<div class="filters collapsed">
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Модель</span>
+    <span class="arrow"><img src="images/стрелка.png"></span>
+    <ul class="filter-options">
+      <li>Седан</li>
+      <li>Кроссовер</li>
+      <li>Купе</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Тип кузова</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>Седан</li>
+      <li>Хэтчбек</li>
+      <li>Универсал</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>КПП</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>Механика</li>
+      <li>Автомат</li>
+      <li>Робот</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Тип двигателя</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>Бензин</li>
+      <li>Дизель</li>
+      <li>Гибрид</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Привод</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>Передний</li>
+      <li>Задний</li>
+      <li>Полный</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Год</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>2022</li>
+      <li>2023</li>
+      <li>2024</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Расход</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>до 7 л</li>
+      <li>7-10 л</li>
+      <li>более 10 л</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Клиренс от, мм</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>120</li>
+      <li>150</li>
+      <li>180</li>
+    </ul>
+  </div>
+  <div class="filter" onclick="toggleFilter(this)">
+    <span>Багажник от, л</span>
+    <span class="arrow"><img src="images/стрелка.png" alt=""></span>
+    <ul class="filter-options">
+      <li>300</li>
+      <li>400</li>
+      <li>500+</li>
+    </ul>
+  </div>
+   <button class="toggle-button" onclick="toggleFilters()">Показать ещё</button>
+</div>
+  <h2 class="price-title">ЦЕНА</h2>
+<div class="price-slider">
+  <div class="range-track">
+    <input type="range" min="221888" max="2130888" value="221888" step="1000" class="range range-min">
+    <input type="range" min="221888" max="2130888" value="2130888" step="1000" class="range range-max">
+  </div>
+  <div class="price-labels"> 
+    <span class="min-price">₽ 221,888.00</span>
+    <span class="max-price">₽ 2,130,888.00</span>
+  </div>
+</div>
+</section>
+
+<div class="category">
+    <h2 class="price-title">НОВИНКИ</h2>
+    <div class="slider">
+        <div class="slider-content"> 
+            <div class="slider-wrapper">
+                <div class="slider-container" id="manicure">
+                    <a href="product.html"><img src="images/Group 81.png"></a>
+                    <a href="product.html"><img src="images/Group 80.png"></a>
+                    <a href="product.html"><img src="images/Group 79.png"></a>
+                    <a href="product.html"><img src="images/Group 78.png"></a>
+                    <a href="product.html"><img src="images/Group 77.png"></a>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev"><img src="images/СТРЕЛКАл.png"></button>
+                <button class="next"><img src="images/СТРЕЛКАп.png"></button>
+            </div>
+        </div>
+    </div>
 </div>
 
-</body>
-</html>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const burger = document.querySelector('.burger');
-    const menu = document.querySelector('.menu');
+<section class="product-section">
+  <h2 class="price-title">МОДЕЛЬНЫЙ РЯД</h2>
+  <div class="product-list">
+    <div class="product-card" data-id="1" data-title="A-Class Hatchback" data-image="images/car.png" data-price="2 222 000 ₽">
+  <div class="image-wrapper">
+    <img src="images/car.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <span class="new-label">NEW</span>
+  <p class="car-model">A-Class Hatchback</p>
+  <p class="car-price">₽ 2 222 000 </p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
 
-    burger.addEventListener('click', () => {
-      menu.classList.toggle('active');
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car2.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <span class="new-label">NEW</span>
+  <p class="car-model">Mercedes-AMG SL Roadster</p>
+  <p class="car-price">₽ 999,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+      
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car3.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <span class="new-label">NEW</span>
+  <p class="car-model">Mercedes-Maybach S-Class</p>
+  <p class="car-price">₽ 1,990,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car4.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">A-Class Sedan</p>
+  <p class="car-price">₽ 241,888.00 </p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car5.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">C-Class Sedan</p>
+  <p class="car-price">₽ 296,888.00 </p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car6.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">CLA</p>
+  <p class="car-price">₽ 221,888.00 </p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car7.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <span class="new-label">NEW</span>
+  <p class="car-model">S-Class</p>
+  <p class="car-price">₽ 241,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car8.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">EQS Sedan</p>
+  <p class="car-price">₽ 798,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car9.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">A-Class Sedan</p>
+  <p class="car-price">₽ 343,888.00 </p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car10.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">EQA</p>
+  <p class="car-price">₽ 296,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car11.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">EQS SUV</p>
+  <p class="car-price">$ 625,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car12.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">GLE</p>
+  <p class="car-price">₽ 544,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car13.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">EQS Sedan</p>
+  <p class="car-price">₽ 1,569,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car14.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">G-Class</p>
+  <p class="car-price">₽ 1,948,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car15.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">Mercedes-Maybach EQS SUV</p>
+  <p class="car-price">₽ 1,088,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car16.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">CLE Coupé</p>
+  <p class="car-price">₽ 518,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car17.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">CLA Coupé</p>
+  <p class="car-price">₽ 527,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car18.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">Mercedes-AMG GT 4-Door Coupé</p>
+  <p class="car-price">₽ 2,130,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="image-wrapper">
+    <img src="images/car19.png" alt="Авто">
+    <button class="like-btn"></button>
+  </div>
+  <p class="car-model">Mercedes-Maybach GLS</p>
+  <p class="car-price">₽ 1,918,888.00</p>
+  <div class="card-actions">
+    <a href="product.html" class="btn-more">подробнее</a>
+    <button class="cart-btn">
+      <img src="images/cart-icon.png" alt="Корзина">
+    </button>
+  </div>
+</div> 
+  </div>
+</section>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="logo"> 
+      <img src="images/Mercedes-Benz.png" alt="Логотип">
+    </div>
+    <div class="footer-images">
+      <img src="images/img1.png" alt="Изображение 1">
+      <img src="images/img2.png" alt="Изображение 2">
+      <img src="images/img3.png" alt="Изображение 3">
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © Бабаджанян Оксанна, 2025
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.menu');
+
+  burger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+
+ function toggleFilter(element) {
+    const isOpen = element.classList.contains('open');
+    document.querySelectorAll('.filter').forEach(el => el.classList.remove('open'));
+    if (!isOpen) {
+      element.classList.add('open');
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.filter-options li').forEach(item => {
+      item.addEventListener('click', function(e) {
+        const filter = this.closest('.filter');
+        const label = filter.querySelector('span');
+        label.textContent = this.textContent;
+        filter.classList.remove('open');
+        e.stopPropagation();
+      });
+    });
+
+    const filters = document.querySelector('.filters');
+    const button = document.querySelector('.toggle-button');
+
+    button.addEventListener('click', () => {
+      filters.classList.toggle('collapsed');
+      button.textContent = filters.classList.contains('collapsed') ? 'Показать ещё' : 'Скрыть';
     });
   });
+
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('.filter')) {
+      document.querySelectorAll('.filter').forEach(el => el.classList.remove('open'));
+    }
+  });
+
+
+  document.querySelectorAll('.like-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('active');
+  });
+});
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    function initSlider(categoryId) {
+        const container = document.getElementById(categoryId);
+        const images = container.querySelectorAll("img");
+        let index = 0;
+        const total = images.length;
+
+        function showImage(step) {
+            index = (index + step + total) % total;
+            container.style.transform = `translateX(-${index * 300}px)`;
+        }
+
+        container.parentElement.parentElement.querySelector(".prev").addEventListener("click", () => showImage(-1));
+        container.parentElement.parentElement.querySelector(".next").addEventListener("click", () => showImage(1));
+    }
+
+    initSlider("manicure"); 
+});
 </script>
+</body>
+</html>
